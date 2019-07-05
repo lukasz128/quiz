@@ -1,0 +1,167 @@
+[
+	{
+		"id":1,
+		"answer":"INSERT",
+		"question": "Polecenie w sql'u dzięki któremu uzupełnisz tabele danymi"
+	},
+	{
+		"id":2,
+		"answer":"IMPLEMENTACJA",
+		"question": "Aby adaptować interfejs, wystarczy po nazwie klasy podać słowo kluczowe .... i wymienić listę interfejsów"
+	},
+	{
+		"id":3,
+		"answer":"ASOSJACYJNA",
+		"question":"Pprzechowuje pary (unikatowy klucz, wartość) i umożliwia dostęp do wartości poprzez podanie klucza"
+	},
+	{
+		"id":4,
+		"answer":"FRAMEWORK",
+		"question":"To gotowy szkielet aplikacji, który zwalnia nas z obowiązku podejmowania decyzji architekturalnej w naszej aplikacji"
+	},
+	{
+		"id":5,
+		"answer":"RELACJA",
+		"question":"Inaczej tabela. Tabelę mają miedzy nimi ..."
+	},
+	{
+		"id":6,
+		"answer":"ATRYBUT",
+		"question":"Inaczej Kolumna/Wiersz nagłówkowy"
+	},
+	{
+		"id":7,
+		"answer":"KROTKA",
+		"question":"Wiersze tabeli z wyjątkiem wiersza nagłówkowowego, w którym umieszczasię nazwy kolumn"
+	},
+	{
+		"id":8,
+		"answer":"MODUŁ",
+		"question":"To plik zawierający kod JS. Wykorzystuje słowa kluczowe import i export. Każdy plik jest zamniknięty i nie podlega modyfikacji z zewnątrz"
+	},
+	{
+		"id":9,
+		"answer":"BIBLIOTEKA",
+		"question":"to 'dekorator' pewnych podstawowych, powtarzalnych czynności, pozwalający je wykonywać efektywniej"
+	},
+	{
+		"id":10,
+		"answer":"KONSTRUKTOR",
+		"question":"Jej zadaniem jest wykonanie pewnych akcji tuż po utworzeniu obiektu"
+	},
+	{
+		"id":11,
+		"answer":"SEMANTYKA",
+		"question":"Poprawność stosowania znaczników HTML"
+	},
+	{
+		"id":12,
+		"answer":"SINGLETON",
+		"question":"Jeden z najprostrzych wzorców projektowych. Jego celem jest ograniczenie możliwości tworzenia obiektów danej klasy do jednej instancji oraz zapewnienie globalnego dostępnu do stworzonego obiektu"
+	},
+	{
+		"id":13,
+		"answer":"DOMENA",
+		"question":"Składa się z dwóch części - nazwy głównej oraz końcowej - rozszerzenia. Nazwę główną bardzo często tworzy nazwa firm/ogranizacji/akcji jej skrót, bądź działalności, którą dana firma wykonuje"
+	},
+	{
+		"id":14,
+		"answer":"DZIEDZICZENIE",
+		"question":"Aby wykonać następstwo, po nazwie klasy dopisujemy słowo kluczowe ... i podajemy nazwę klasy, którą chcemy rozszerzyć"
+	},
+	{
+		"id":15,
+		"answer":"WZORZEC PROJEKTOWY",
+		"question":"uniwersalne, sprawdzone w praktyce rozwiązanie często pojawiających się, powtarzalnych problemów projektowych. Pokazuje powiązania i zależności pomiędzy klasami oraz obiektami i ułatwia tworzenie, modyfikację oraz pielęgnację kodu źródłowego"
+	},
+	{
+		"id":16,
+		"answer":"DEKREMENTACJA",
+		"question":"operacja która powoduje zmienijszenie wartości o jeden"
+	},
+	{
+		"id":17,
+		"answer":"HERMETYZACJA",
+		"question":"Rodzaje dostępów do metod i właściwości w Klasach"
+	},
+	{
+		"id":18,
+		"answer":"INKREMENTACJA",
+		"question":"operacja która powoduje zwiększenie wartości o jeden"
+	},
+	{
+		"id":19,
+		"answer":"BACK END",
+		"question":"Końcowe stadium procesu. Skrypty uruchamiane po stronie serwera"
+	},
+	{
+		"id":20,
+		"answer":"EDYTOR KODU",
+		"question":"Program komputerowy wspomagający pisanie kodu źródłowego. Rozpoznaje i wyróżnia składnie"
+	},
+	{
+		"id":21,
+		"answer":"ZMIENNA",
+		"question":"Przechowują dane. Odwołujemy się do nich po nazwie, ich danę mogą być zmieniane"
+	},
+	{
+		"id":22,
+		"answer":"FABRYKA",
+		"question":"Wzorzec świetnie sprawdza się w sytuacjach, w których należy utworzyć obiekt posiadający pewien predefiniowany zestaw zachowań (implementuje interfejs), których oczekujemy, jednak sam typ obiektu nie jest istotny."
+	},
+	{
+		"id":23,
+		"answer":"FRONT END",
+		"question":"Początkowe stadium procesu. Odpowiedzialne jest za interfejs użytkownika"
+	},
+	{
+		"id":24,
+		"answer":"LAMBDA",
+		"question":"Funkcja anonimowa w języku Python"
+	},
+	{
+		"id":25,
+		"answer":"WALIDACJA DANYCH",
+		"question":"działanie mające na celu potwierdzenie formatów danych"
+	},
+	{
+		"id":26,
+		"answer":"ABSTRAKCJA",
+		"question":" pewnego rodzaju uproszczenie rozpatrywanego problemu, polegające na ograniczeniu zakresu cech manipulowanych obiektów wyłącznie do cech kluczowych dla algorytmu, a jednocześnie niezależnych od implementacji"
+	},
+	{
+		"id":27,
+		"answer":"STAŁA",
+		"question":"Przechowują dane. Odwołujemy się do nich po nazwie, ich danę nie mogą być zmieniane"
+	},
+	{
+		"id":28,
+		"answer":"RESPONSYWNOŚĆ",
+		"question":"Dostosowanie strony do wielu urządzeń (rozdzielczość)"
+	},
+	{
+		"id":29,
+		"answer":"INTERFACE",
+		"question":"definicja abstrakcyjnego typu posiadającego jedynie operacje, a nie dane."
+	},
+	{
+		"id":30,
+		"answer":"STRUKTURALNE",
+		"question":"paradygmat programowania opierający się na podziale kodu źródłowego programu na procedury i hierarchicznie ułożone bloki z wykorzystaniem struktur kontrolnych w postaci instrukcji wyboru i pętli"
+	},
+	{
+		"id":31,
+		"answer":"TCL",
+		"question":"Transaction Control Language - skrót"
+	},
+	{
+		"id":32,
+		"answer":"OBIEKTOWE",
+		"question":" paradygmat programowania, w którym programy definiuje się za pomocą obiektów – elementów łączących stan (czyli dane, nazywane najczęściej polami) i zachowanie (czyli procedury, tu: metody)"
+	},
+	{
+		"id":33,
+		"answer":"STRZAŁKOWE",
+		"question":" 'Nowe' funkcje anonimowe w JS (ES6)"
+	}
+]

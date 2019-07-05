@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i');
+
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+.main-header {
+	background: #303;
+	color: #FFF;
+	overflow-x: hidden;
+}
+.main-header > .title {
+	color: inherit;
+	text-align: center;
+}
+
+.container {
+	max-width: 1400px;
+	margin: 0 auto;
+	overflow-x: auto;
+}
+
+.board {
+	display: grid;
+	grid-template-columns: repeat(32, 1fr);
+	grid-template-areas: ". . . . . . . . . . . . . row1-1 row1-2 row1-3 row1-4 row1-5 row1-6 row1-7 row1-8 row1-9 row1-10 row1-11 row1-12 row1-13 . . . . ."
+						 ". . . . . . . . . . . . . row2-1 . . . . . . . . . . . . . . . . ."
+						 ". . . . . . . . . . . . row3-1 row3-2 row3-3 row3-4 row3-5 row3-6 row3-7 row3-8 row3-9 row3-10 row3-11 . . . . . . . . "
+						 ". . . . . . . . . . . . . row4-1 . . . . . . . . . . . . . . . . ."
+						 ". . . . . . . . . . . . row5-1 row5-2 row5-3 row5-4 row5-5 row5-6 row5-7 row5-8 row5-9 . . . . row5-10 . . . . ."
+						 ". . . . . . . . . . . . . row6-1 . . . . . row6-2 . . . . . row6-3 . . . . ."
+						 ". . . . . . . . . . . . . . . . . . . row7-1 . . . . . row7-2 . . . . ."
+						 ". . . . . . . . . . . . . . . . . . . row8-1 row8-2 row8-3 row8-4 row8-5 row8-6 row8-7 . . . . ."
+						 ". . . . . . . . . . . . . . . . . . . row9-1 . . . . . row9-2 . . . . ."
+						 ". . . . . . . . . . . . . . . row10-1 . . . row10-2 . . . . . row10-3 . . . . ."
+						 ". . . . . . . . . . row11-1 row11-2 row11-3 row11-4 row11-5 row11-6 row11-7 row11-8 row11-9 row11-10 . . . . row11-11 . . . . . ."
+						 ". . . . . . . . . . . . . . . row12-1 . . . . . . . .  row12-2 . . . . . ."
+						 ". . . . . . . . . row13-1 row13-2 row13-3 row13-4 row13-5 row13-6 row13-7 row13-8 row13-9 row13-10 row13-11 . . . . row13-12 . . . . . ."
+						 ". . . . . . . . . . . . row14-1 . . row14-2 . . . . . . . . row14-3 . . . . . ."
+						 ". . . . . . . . . . . . row15-1 . . . . . . . . . . . row15-2 . . . . . ."
+						 ". . . . . . . . . . . . row16-1 . . row16-2 row16-3 row16-4 row16-5 row16-6 row16-7 row16-8 row16-9 row16-10 row16-11 row16-12 row16-13 row16-14 . . ."
+						 ". . . .  row17-1 row17-2 row17-3 row17-4 row17-5 row17-6 row17-7 row17-8 row17-9 . . row17-10 . . . . . . . . row17-11 . . . . . ."
+						 ". . . . . . . . . . . . row18-1 . . row18-2 . . . . . . . . row18-3 . . . . . ."
+						 ". . . . . . . . . . . . row19-1 . . row19-2 . . . . . . . . row19-3 . . . . . ."
+						 ". . . . . row20-1  . . . . . . row20-2 . . row20-3 . . . . . . . . row20-4 . . . . . ."
+						 ". . . .  row21-1 row21-2 row21-3 row21-4 row21-5 row21-6 row21-7 row21-8 row21-9 row21-10 row21-11 row21-12 . . . . . . . . row21-13 . . . . . ."
+						 ". . . . . row22-1 . . . . . . . . . . row22-2 . . . . . . . row22-3 . . row22-4 . . ."
+						 "row23-1 row23-2 row23-3 row23-4 row23-5 row23-6 row23-7 row23-8 row23-9 row23-10 row23-11 . . . . . row23-12 . . . . . . . row23-13 . . row23-14 . . ."
+						 ". . . . . row24-1 . . . . . . . . . . row24-2 . . . . . . . row24-3 . . row24-4 . . ."
+						 ". . . . row25-1 row25-2 row25-3 row25-4 row25-5 row25-6 row25-7 . . . . . row25-8 . . . . . . . row25-9 . . row25-10 . . ."
+						 ". . . . . row26-1 . . . . . . . . . . row26-2 . . . . . row26-3 row26-4 row26-5 row26-6 row26-7 row26-8 row26-9 row26-10 row26-11"
+						 ". . . . . row27-1 . . . . . . . . . . row27-2 . . . . .  row27-3 . row27-4 . . row27-5 . . ."
+						 ". . . . . row28-1 . . . row28-2 . . . . . . row28-3 . . . . . row28-4 . row28-5 . . row28-6 . . ."
+						 ". . . . row29-1 row29-2 row29-3 row29-4 row29-5 row29-6 row29-7 row29-8 row29-9 row29-10 row29-11 row29-12 row29-13 row29-14 row29-15 row29-16 . . row29-17 . . . . row29-18 . . ."
+						 ". . . row30-1 . row30-2 . . . row30-3 . . . . . . row30-4 . . . . . row30-5 . . . . . . . ."
+						 ". . . row31-1 . row31-2 . . . row31-3 . . . . . . row31-4 . . . . . row31-5 . . . . . . . ."
+						 ". . . row32-1 row32-2 row32-3 row32-4 row32-5 . row32-6 . . . . . . row32-7 . . . . . row32-8 . . . . . . . ."
+						 ". . . row33-1 . . . . . row33-2 . . . row33-3 . . row33-4 . . . . . . . . . . . . . ."
+						 ". . . row34-1 . . . . . . row34-2 row34-3 row34-4 row34-5 row34-6 row34-7 row34-8 row34-9 row34-10 . . . . . . . . . . . ."
+						 ". . . row35-1 . . . . . . . . . row35-2 . . . . . . . . . . . . . . . . ."
+						 ". . . row36-1 . . . . . . . . . row36-2 . . . . . . . . . . . . . . . . ."
+						 ". . . row37-1 . . . . . . . . . row37-2 . . . . . . . . . . . . . . . . ."
+						 ". . . row38-1 . . . . . . . . . row38-2 . . . . . . . . . . . . . . . . ."
+						 ". . . row39-1 . . . . . . . . . row39-2 . . . row39-3 . . . . . . . . . . . . ."
+						 ". . . . . . . . . . . . . row40-1 . . . row40-2 row40-3 row40-4 . . . . . . . . . . ."
+						 ". . . . . . . . . . . . . row41-1 . . . row41-2 . . . . . . . . . . . . ."
+						 ". . . . . . . . . . . . . row42-1 . . . row42-2 . . . . . . . . . . . . ."
+						 ". . . . . . . . . . . . . row43-1 row43-2 row43-3 row43-4 row43-5 row43-6 row43-7 row43-8 row43-9 . . . . . . . . ."
+						 ". . . . . . . . . . . . . row44-1 . . . row44-2 . . . . . . . . . . . . ."
+						 ". . . . . . . . . . . . . row45-1 . . . row45-2 . . . . . . . . . . . . ."
+						 ". . . . . . . . . . . . . . . row46-1 row46-2 row46-3 row46-4 row46-5 row46-6 row46-7 row46-8 row46-9 row46-10 . . . . . ."
+						 ". . . . . . . . . . . . . . . . . row47-1 . . . . . . . . . . . . ."
+						 ". . . . . . . . . . . . . . . . . row48-1 . . . . . . . . . . . . ."
+						 ". . . . . . . . . . . . . . . . . row49-1 . . . . . . . . . . . . ."
+						 ". . . . . . . . . . . . . . . . . row50-1 . . . . . . . . . . . . .";
+	width: 1rem;
+	margin: 2rem 0;
+}
+input {
+	margin: .1rem;
+	font-size: .6rem;
+	text-align: center;	
+	padding: .5rem;
+	border: 1px solid #AAA;
+}
+.disabled {
+	background: #303;
+}
+.first-word {
+	position: relative;
+	color: #12345F;
+	z-index: 1;
+}
+.first-word::before {
+	content: attr(data-answer1);
+	position: absolute;
+	font-size: 1rem;
+	top: -1rem;
+	z-index: 2;
+}
+.first-word::after {
+	content: attr(data-answer2);
+	position: absolute;
+	font-size: 1rem;
+	left: -1rem;
+	z-index: 2;
+}
+ 
+.cant-copy {
+	-webkit-user-select: none; 
+  	-moz-user-select: none; 
+  	-ms-user-select: none; 
+  	user-select: none;
+}
+
+.question-section {
+	margin: 1rem 0;
+}
+
+.question-section .question {
+	margin: 1rem 0;
+	text-align: right;
+	font-style: italic;
+	padding: 0 1rem;
+	font-size: 1.1rem;
+}
+
+.question-fixed-section {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 999;
+	border-top: 1px solid #000;
+	padding: .5rem;
+	background: #FFF;
+	animation: fadeIn 1500ms;
+}
+.question-fixed-section #question-number {
+	width: 100px;
+	padding: .4rem 0;
+	text-align: center;
+	border: 1px solid #AAA;
+}
+.question-fixed-section #question-value {
+	float: right;
+	padding: .4rem 0;
+	font-style: italic;
+}
+
+/* Footer */
+.main-footer {
+	margin: 2rem 0;
+	color: #000;
+}
+.main-footer .author {
+	color: inherit;
+	text-align: center;
+}
+
+/* Classes For JS */
+
+.invalid-word {
+	border: 1px solid #F00;
+}
+.valid-word {
+	border: 1px solid #0F0;
+}
+
+/* Animation */
+
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+
+/* Media Query */
+
+@media(max-width: 1000px) {
+	input {
+		padding: .1rem;
+	}
+}
+@media(max-width: 700px) {
+	input {
+		padding: 0;
+		font-size: .5rem;
+	}
+	.first-word,
+	.first-word::before,
+	.first-word::after {
+		font-size: .5rem;
+	}
+}
+@media(max-width: 500px) {
+	.question-fixed-section #question-number {
+		width: 100%;
+	}
+}
