@@ -62,7 +62,7 @@ function init()
 
 			for(let j=0;j<answer_.answer.length;j++) {
 
-				answerOp.answer[j].addEventListener('keyup', () => {
+				const changeInputStyle = j => {
 					if(answer_.answer[j] == answerOp.answer[j].value.toUpperCase()) {
 						answerOp.answer[j].classList.add("valid-word");
 						answerOp.answer[j].classList.remove("invalid-word");
@@ -70,11 +70,18 @@ function init()
 					else {
 						answerOp.answer[j].classList.remove("valid-word");
 						answerOp.answer[j].classList.add("invalid-word");
-					}
+					}			
+				}
+
+				answerOp.answer[j].addEventListener('keyup', () => {
+					changeInputStyle(j)
+				});
+				
+				answerOp.answer[j].addEventListener('keydown', () => {
+					changeInputStyle(j)
 				});
 			}
 		}
-
 
 		answer.forEach((i, x) => {
 			question.innerHTML += `
